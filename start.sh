@@ -1,6 +1,7 @@
 #! /bin/bash
 
 mvn install
+
 cd weixin
 mvn spring-boot:start
 
@@ -10,5 +11,7 @@ mvn spring-boot:start
 cd ../unsubscribe
 mvn spring-boot:start
 
-cd ../self_menu
+cd ../self-menu
 mvn spring-boot:start
+
+
