@@ -1,8 +1,8 @@
 # 配置MySQL数据库的连接参数
 spring:
    datasource:
-      url: jdbc:mysql://127.0.0.1:3306/zhh_1?useSSL=false&serverTimezone=CST&allowPublicKeyRetrieval=true
-      username: zhh
+      url: jdbc:mysql://127.0.0.1:3306/zyz_1?useSSL=false&serverTimezone=CST&allowPublicKeyRetrieval=true
+      username: zyz
       password: 1234
    jpa:
       # 自动生成数据库的表
@@ -22,4 +22,4 @@ spring:
 
 # 修改运行时的端口号，因为一个端口号只能被一个人使用。
 # 如果多个人使用一台服务器，自然要使用不同的端口！
-server.port: 8091
+server.port: 8076

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.context.request.WebRequest;
 
 @Controller
-@RequestMapping("/zhh_1/library/debit")
+@RequestMapping("/zyz/library/debit")
 // 只要在@SessionAttributes里面列出来的名字，那么就会自动加入Session里面，并且在访问控制器的时候会从Session里面取出来。
 // 以后只需要把对象放入Model里面，名字在@SessionAttributes列出，对象自动会进入Session。
 @SessionAttributes({ "debitList" })
@@ -34,7 +34,7 @@ public class DebitController {
 		this.libraryService.add(id, list);
 
 		// 添加完成以后，重定向到借阅列表显示的页面
-		return "redirect:/zhh_1/library/debit/list";
+		return "redirect:/zyz/library/debit/list";
 	}
 
 	@RequestMapping("list")
@@ -53,6 +53,6 @@ public class DebitController {
 			// 从Session里面或名为debitList的对象，并且自动强制类型转换
 			@SessionAttribute("debitList") DebitList list) {
 		this.libraryService.remove(id, list);
-		return "redirect:/zhh_1/library/debit/list";
+		return "redirect:/zyz/library/debit/list";
 	}
 }

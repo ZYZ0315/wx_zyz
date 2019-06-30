@@ -11,7 +11,7 @@ import com.example.weixin.library.domain.Book;
 import com.example.weixin.library.service.LibraryService;
 
 @Controller
-@RequestMapping("/zhh_1/library")
+@RequestMapping("/zyz/library")
 public class IndexController {
 
 	@Autowired
