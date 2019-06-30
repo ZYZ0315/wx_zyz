@@ -136,9 +136,9 @@
 	<button onclick="saveMenus()">保存</button>
 </div>
 
-<script type="text/javascript" src="/zhh_1/menu/js/jquery.js"></script>
-<script type="text/javascript" src="/zhh_1/menu/js/vue.js"></script>
-<script type="text/javascript" src="/zhh_1/menu/js/menu.js"></script>
+<script type="text/javascript" src="/zyz/menu/js/jquery.js"></script>
+<script type="text/javascript" src="/zyz/menu/js/vue.js"></script>
+<script type="text/javascript" src="/zyz/menu/js/menu.js"></script>
 
 </body>
 </html>
