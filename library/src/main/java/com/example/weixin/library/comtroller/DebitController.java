@@ -25,7 +25,7 @@ public class DebitController {
 	public String debit(@RequestParam("id") String id, WebRequest request) {
 
 		DebitList list = (DebitList) request.getAttribute("debitList", WebRequest.SCOPE_SESSION);
-		// 必须要保证list不能为null
+		
 		if (list == null) {
 			list = new DebitList();
 			request.setAttribute("debitList", list, WebRequest.SCOPE_SESSION);
