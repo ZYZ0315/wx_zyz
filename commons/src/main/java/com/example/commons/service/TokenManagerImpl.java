@@ -94,9 +94,7 @@ public class TokenManagerImpl implements TokenManager {
 	}
 
 	public ResponseToken getRemoteToken(String account) {
-		// 此时目前不考虑任何的具体实现，只是简单获取一下令牌，也不缓存，每次都获取。
-		// 实际项目绝对不能这样干，因为获取令牌的接口每天最多能够调用2000次（每个appid）。
-		// 这里现在暂时为了简化而不考虑缓存，后面会进行重构。
+		
 
 		String appid = "wxa7893b39f742b89d";
 		String appsecret = "7c2c522dbdc7ff657a2d9ee1af28421a";
@@ -114,9 +112,7 @@ public class TokenManagerImpl implements TokenManager {
 
 		ResponseMessage rm;
 		try {
-			// BodyHandlers是一个工具类，它提供了许多的响应体处理程序
-			// ofString表示把响应体转换为String的一个处理程序
-			// Charset.forName("UTF-8")使用UTF-8的字符编码
+			
 			HttpResponse<String> response = hc.send(request, BodyHandlers.ofString(Charset.forName("UTF-8")));
 
 			String body = response.body();
