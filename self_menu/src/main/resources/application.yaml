@@ -10,16 +10,11 @@ spring:
       properties:
          # 设置一个方言，用于自动加上MySQL的引擎名称，默认MyISAM不支持事务，不推荐使用。
          hibernate.dialect: org.hibernate.dialect.MySQL57Dialect
-   
-   # 配置Redis的连接信息
-   redis:
-      # 这里换自己的IP
+    
+   redis:     
       host: 47.100.121.99
       port: 6379
       database: 15
 
-   
 
-# 修改运行时的端口号，因为一个端口号只能被一个人使用。
-# 如果多个人使用一台服务器，自然要使用不同的端口！
 server.port: 8076

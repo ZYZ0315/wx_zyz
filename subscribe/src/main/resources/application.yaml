@@ -9,22 +9,8 @@ spring:
       generate-ddl: true
 # 显示每个SQL在日志里面
       show-sql: true
-# 配置Redis的连接信息
+
    redis:
-# 这里换自己的IP
       host: 47.100.121.99
       port: 6379
       database: 15
-# 修改运行时的端口号，因为一个端口号只能被一个人使用。
-# ----------------
-# Orphan comments:
-# ----------------
-# Was at begin of line:19 :# ----------------
-# Was at begin of line:20 :# Orphan comments:
-# Was at begin of line:21 :# ----------------
-# Was at begin of line:22 :# Was at begin of line:19 :# ----------------
-# Was at begin of line:23 :# Was at begin of line:20 :# Orphan comments:
-# Was at begin of line:24 :# Was at begin of line:21 :# ----------------
-# Was at begin of line:25 :# Was at begin of line:22 :# Was at begin of line:19 :# 如果多个人使用一台服务器，自然要使用不同的端口！
-# Was at begin of line:26 :# Was at begin of line:23 :# Was at begin of line:20 :# 删除WEB功能，就不需要server.port参数
-# Was at begin of line:27 :# Was at begin of line:24 :# Was at begin of line:21 :#server.port: 8089
